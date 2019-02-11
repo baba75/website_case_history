@@ -1,0 +1,70 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+    <record model="ir.ui.view" id="case_history_list">
+      <field name="name">Reference list</field>
+      <field name="model">case.history</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="priority"/>    
+        </tree>
+      </field>
+    </record>
+      
+    <record id="view_form_case_history" model="ir.ui.view">
+        <field name="name">Case History Form</field>
+        <field name="model">case.history</field>
+        <field name="arch" type="xml">
+            <form string="References">
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                       
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="tags_ids" widget="many2many_tags" string="Reference Categories"/>
+                        <field name="priority"/>
+                        <field name="credits"/>
+                        <field name="description" widget="html"/>
+                        <field name="orientation"/>
+                        <!--
+                         <div>
+                          <p class="oe_view_nocontent_create">
+                            Images of the gallery could be vertical or horizontal. It is important for proper display that all pictures has the same proportion between width and height.
+                          </p>
+                          <p>Example: a vertical pics of 655 × 1024 and a pics of 800x1250 have the same proportion </p>
+                        </div>
+                        -->
+                        <field name="image" widget="image"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>    
+    </record>
+      
+    <record id="view_form_case_category" model="ir.ui.view">
+      <field name="name">Case History Category</field>
+        <field name="model">case.category</field>
+        <field name="arch" type="xml">
+            <form string="References category">
+                <field name="name"/>
+                <field name="icon" widget="image"/>
+            </form>
+        </field>
+    </record>
+      
+    <record id="view_filter_case_history" model="ir.ui.view">
+        <field name="name">References Filter</field>
+        <field name="model">case.history</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+  </data>
+</odoo>

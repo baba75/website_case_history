@@ -1,0 +1,66 @@
+@media only screen and (min-width: 576px) {
+    .cropper-v{
+         width: 500px;
+         height: 500px;
+         overflow: hidden;
+    }
+    
+    .cropper-v img{
+        width: 750px;
+        height: auto;
+    } 
+    
+    .cropper-h{
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+    } 
+    
+    .cropper-h img{
+        width: 750px;
+        height: auto;
+    } 
+}
+
+@media only screen and (min-width: 768px) {
+    .cropper-v{
+         width: 800px;
+         height: 800px;
+         overflow: hidden;
+    }
+    
+    .cropper-v img{
+        width: 1200px;
+        height: auto;
+    } 
+    
+    .cropper-h{
+        width: 800px;
+        height: 600px;
+        overflow: hidden;
+    } 
+    
+    .cropper-h img{
+        width: 1200px;
+        height: auto;
+    } 
+}
+
+
+
+.mylabel{
+    font-family: Roboto;
+    font-size: 20px; 
+    font-weight: bold;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.gallery-tag-icon{
+    height: 100px;
+}
+
+.gallery-tag{
+    list-style-type: none;
+    display: inline;
+}

@@ -1,0 +1,220 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_case_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20181106\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-07 15:32+0000\n"
+"PO-Revision-Date: 2019-01-07 16:43+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Language: it\n"
+
+#. module: website_case_history
+#: model:ir.ui.view,arch_db:website_case_history.Reference_list
+msgid ""
+"<font style=\"color: rgb(255, 156, 0); font-size: 48px;\">Microbond,</font>"
+msgstr ""
+"<font style = \"color: rgb (255, 156, 0); font-size: 48px;\" >Microbond,</"
+"font>"
+
+#. module: website_case_history
+#: model:ir.ui.view,arch_db:website_case_history.Reference_list
+msgid ""
+"<font style=\"font-size: 24px;\" class=\"text-white\">some interesting "
+"insight...</font>\n"
+"                  <font style=\"font-size: 48px;\" class=\"text-white\"> </"
+"font>\n"
+"                  <br/>"
+msgstr ""
+"<font style = \"font-size: 24px;\" class = \"text-white” >qualche spunto "
+"interessante…</font>\n"
+"                  <font style = \"font-size: 48px;\" class = \"text-white” "
+"> </font> <br/>"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_active
+msgid "Active?"
+msgstr "Attivo?"
+
+#. module: website_case_history
+#: model:ir.ui.view,arch_db:website_case_history.Reference_list
+msgid "All"
+msgstr "Tutti"
+
+#. module: website_case_history
+#: model:ir.model,name:website_case_history.model_case_history
+#: model:ir.ui.menu,name:website_case_history.menu_case_history
+msgid "Case History"
+msgstr "Case History"
+
+#. module: website_case_history
+#: model:ir.actions.act_window,name:website_case_history.action_case_categories
+msgid "Case History Categories"
+msgstr "Categorie Case History "
+
+#. module: website_case_history
+#: model:ir.model,name:website_case_history.model_case_category
+msgid "Case History Categories (tags)"
+msgstr "Categorie di Case History (tag)"
+
+#. module: website_case_history
+#: model:ir.actions.act_window,name:website_case_history.action_case_references
+msgid "Case History References"
+msgstr "Referenze"
+
+#. module: website_case_history
+#: model:ir.ui.menu,name:website_case_history.menu_case_categories
+msgid "Categories"
+msgstr "Categorie"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_category_icon
+msgid "Category Icon"
+msgstr "Icona della Categoria"
+
+#. module: website_case_history
+#: model:ir.model.fields,help:website_case_history.field_case_category_icon
+msgid "Category icon to be used as selector"
+msgstr "Icona di categoria da utilizzare come selettore"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_category_name
+msgid "Category name"
+msgstr "Nome Categoria"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_category_create_uid
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_category_create_date
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: website_case_history
+#: model:ir.ui.view,arch_db:website_case_history.Reference_list
+msgid "Credit:"
+msgstr "Riconoscimenti:"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_credits
+msgid "Credits"
+msgstr "Riconoscimenti"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_category_display_name
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_display_name
+msgid "Display Name"
+msgstr "Nome Visualizzato"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_category_id
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_image
+msgid "Image"
+msgstr "Immagine"
+
+#. module: website_case_history
+#: model:ir.model.fields,help:website_case_history.field_case_history_tags_ids
+msgid "Insert a classification of the references"
+msgstr "Inserire una classificazione delle referenze"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_category___last_update
+#: model:ir.model.fields,field_description:website_case_history.field_case_history___last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_category_write_uid
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_write_uid
+msgid "Last Updated by"
+msgstr "Ultima modifica di"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_category_write_date
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_write_date
+msgid "Last Updated on"
+msgstr "Ultima modifica il"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_orientation
+msgid "Orientation"
+msgstr "Orientamento"
+
+#. module: website_case_history
+#: model:ir.model.fields,help:website_case_history.field_case_history_credits
+msgid "Partner who did the job"
+msgstr "Partner che ha fatto il lavoro"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_priority
+msgid "Priority"
+msgstr "Priorità"
+
+#. module: website_case_history
+#: model:ir.ui.view,arch_db:website_case_history.view_form_case_history
+msgid "Reference Categories"
+msgstr "Categorie delle Referenze"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_description
+msgid "Reference Description"
+msgstr "Descrizione della Referenza"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_name
+msgid "Reference Title"
+msgstr "Titolo della Referenza"
+
+#. module: website_case_history
+#: model:ir.ui.menu,name:website_case_history.menu_case_references
+#: model:ir.ui.view,arch_db:website_case_history.view_form_case_history
+msgid "References"
+msgstr "Referenze"
+
+#. module: website_case_history
+#: model:ir.model.fields,field_description:website_case_history.field_case_history_tags_ids
+msgid "References Tags"
+msgstr "Tag referenze"
+
+#. module: website_case_history
+#: model:ir.ui.view,arch_db:website_case_history.view_form_case_category
+msgid "References category"
+msgstr "Categoria referenze"
+
+#. module: website_case_history
+#: model:ir.model.fields,help:website_case_history.field_case_history_image
+msgid "This field holds the image used as image for the reference."
+msgstr ""
+"Questo campo contiene l'immagine utilizzata come immagine per la referenza."
+
+#. module: website_case_history
+#: model:ir.ui.view,arch_db:website_case_history.Reference_list
+msgid "all"
+msgstr "tutti"
+
+#. module: website_case_history
+#: selection:case.history,orientation:0
+msgid "horizontal"
+msgstr "orizzontale"
+
+#. module: website_case_history
+#: selection:case.history,orientation:0
+msgid "vertical"
+msgstr "verticale"
