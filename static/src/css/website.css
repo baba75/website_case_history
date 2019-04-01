@@ -1,51 +1,90 @@
 @media only screen and (min-width: 576px) {
     .cropper-v{
-         width: 500px;
-         height: 500px;
-         overflow: hidden;
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
     }
-    
+
     .cropper-v img{
         width: 750px;
         height: auto;
     } 
-    
+
     .cropper-h{
         width: 500px;
         height: 500px;
         overflow: hidden;
     } 
-    
+
     .cropper-h img{
         width: 750px;
         height: auto;
     } 
+
+    .ref-title{
+        color: #f49712;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .ref-credit{
+        color: #555555;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .cropper-v{
-         width: 800px;
-         height: 800px;
-         overflow: hidden;
+        width: 800px;
+        height: 800px;
+        overflow: hidden;
     }
-    
+
     .cropper-v img{
         width: 1200px;
         height: auto;
     } 
-    
+
     .cropper-h{
         width: 800px;
         height: 600px;
         overflow: hidden;
     } 
-    
+
     .cropper-h img{
         width: 1200px;
         height: auto;
     } 
+    .ref-title{
+        color: #f49712;
+        margin: -15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .ref-credit{
+        color: #555555;
+        margin: -15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 }
 
+@media only screen and (min-width: 992px){
+    .ref-title{
+        color: #f49712;
+        margin: -15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 0px !important;
+    }
+    .ref-credit{
+        color: #555555;
+        margin: -15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 0px !important;
+    }
+}
 
 
 .mylabel{
@@ -56,11 +95,36 @@
     color: #ffffff;
 }
 
-.gallery-tag-icon{
-    height: 100px;
+.gallery-tag{
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 40px;
+    color: #F49712;
+}
+.gallery-tag-sel{
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 40px;
+    color: #555555;
 }
 
-.gallery-tag{
-    list-style-type: none;
-    display: inline;
+
+.gallery-separator{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #F49712;
+    padding: 10px;
 }
+
+.shortdesc{
+    font-family: Roboto;
+    font-size: 14px;
+
+}
+hr{
+    width: 30%;
+    border-top: 1px solid #F49712;
+}
+

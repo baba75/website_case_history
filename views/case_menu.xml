@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <odoo>
     <!-- Action to open Case History list -->
+    <act_window id="action_case_groups"
+        name="Case History Groups"
+        res_model="case.group"
+        view_mode="tree,form" />
     <act_window id="action_case_references"
         name="Case History References"
         res_model="case.history"
-        view_mode="tree,form" />
-    <act_window id="action_case_categories"
-        name="Case History Categories"
-        res_model="case.category"
         view_mode="tree,form" />
     
     <!-- Menu item to open Case History list -->
@@ -15,12 +15,12 @@
         name="Case History"
         web_icon="website_case_history,static/description/icon.png"/>
     
+        <menuitem id="menu_case_groups"
+        name="Groups"
+        action="action_case_groups"
+        parent="menu_case_history"/>
         <menuitem id="menu_case_references"
         name="References"
         action="action_case_references"
-        parent="menu_case_history"/>
-        <menuitem id="menu_case_categories"
-        name="Categories"
-        action="action_case_categories"
         parent="menu_case_history"/>
 </odoo>

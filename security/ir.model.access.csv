@@ -1,5 +1,7 @@
 "id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
 "access_case_history_gallery","case.history.public","model_case_history",,1,0,0,0
 "access_case_history_category","case.history.category.public","model_case_category",,1,0,0,0
+"access_case_history_group","case.history.group.public","model_case_group",,1,0,0,0
 "access_case_history_gallery_user","case.history.user","model_case_history","website.group_website_designer",1,1,1,1
-"access_case_history_categry_user","case.category.user","model_case_category","website.group_website_designer",1,1,1,1
+"access_case_history_category_user","case.category.user","model_case_category","website.group_website_designer",1,1,1,1
+"access_case_history_group_user","case.group.user","model_case_group","website.group_website_designer",1,1,1,1

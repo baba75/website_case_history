@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "website_case_history",
+    'name': "Website Case History",
 
     'summary': """
         Case history
@@ -8,6 +8,8 @@
 
     'description': """
         Classification of references, case histories or portfolio with pictures, description and tags
+
+        The module let you create multiple galleries, with 2 different layout (gallery and reference)
     """,
 
     'author': "Alberto Carollo",
@@ -17,7 +19,7 @@
     # Check https://github.com/odoo/odoo/blob/10.0/odoo/addons/base/module/module_data.xml
     # for the full list
     'category': 'Website',
-    'version': '0.1',
+    'version': '0.2',
 
     # any module necessary for this one to work correctly
     'depends': ['base','website'],
@@ -25,6 +27,7 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'data/website_data.xml',
         'views/views.xml',
         'views/templates.xml',
         'views/case_menu.xml',
