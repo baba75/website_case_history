@@ -117,6 +117,7 @@
                             <section class="s_big_picture mb32">
                                 <div class="container">
                                     <div class="row">
+                                        <hr/>
                                         <t t-if="reference.orientation=='vertical'">
                                             <div class="col-md-8 col-md-offset-2 col-sm-12 cropper-v" style="padding: 0px;">
                                                 <div class="col-md-8 mt16">
@@ -129,7 +130,7 @@
                                             <t t-if="reference.credits">
                                                 <div class="ref-credit mb16 col-md-8 col-md-offset-2" >
                                                     <h4 class="text-right">
-                                                        <b class="o_default_snippet_text">Credit: <span><t t-raw="reference.credits"/> </span></b>
+                                                        <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
                                                     </h4>
                                                 </div>
                                             </t>
@@ -147,7 +148,7 @@
                                             <t t-if="reference.credits">
                                                 <div class="ref-credit mb16 col-md-8 col-md-offset-2" >
                                                     <h4 class="text-right">
-                                                        <b class="o_default_snippet_text">Credit: <span><t t-raw="reference.credits"/> </span></b>
+                                                        <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
                                                     </h4>
                                                 </div>
                                             </t>
@@ -206,7 +207,7 @@
                                             <t t-if="reference.credits">
                                                 <div class="ref-credit mb16 col-md-8 col-md-offset-2" >
                                                     <h4 class="text-right">
-                                                        <b class="o_default_snippet_text">Credit: <span><t t-raw="reference.credits"/> </span></b>
+                                                        <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
                                                     </h4>
                                                 </div>
                                             </t>
@@ -230,7 +231,7 @@
                                             <t t-if="reference.credits">
                                                 <div class="ref-credit mb16 col-md-8 col-md-offset-2" >
                                                     <h4 class="text-right">
-                                                        <b class="o_default_snippet_text">Credit: <span><t t-raw="reference.credits"/> </span></b>
+                                                        <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
                                                     </h4>
                                                 </div>
                                             </t>
@@ -246,9 +247,7 @@
                         </t>
                     </div>
                     <t t-call="website_case_history.gallery_tags"/>
-                    <br/><br/>
                 </div>
-
             </div>
         </template>
 
