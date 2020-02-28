@@ -12,7 +12,7 @@
 
     .cropper-h{
         width: 500px;
-        height: 500px;
+        height: 400px;
         overflow: hidden;
     } 
 
@@ -57,13 +57,13 @@
     } 
     .ref-title{
         color: #f49712;
-        margin: -15px;
+        margin-left: -15px;
         padding-bottom: 10px;
         padding-top: 10px;
     }
     .ref-credit{
         color: #555555;
-        margin: -15px;
+        margin-right: -15px;
         padding-bottom: 10px;
         padding-top: 10px;
     }
@@ -72,14 +72,14 @@
 @media only screen and (min-width: 992px){
     .ref-title{
         color: #f49712;
-        margin: -15px;
+        margin-left: -15px;
         padding-bottom: 10px;
         padding-top: 10px;
         padding-right: 0px !important;
     }
     .ref-credit{
         color: #555555;
-        margin: -15px;
+        margin-right: -15px;
         padding-bottom: 10px;
         padding-top: 10px;
         padding-right: 0px !important;

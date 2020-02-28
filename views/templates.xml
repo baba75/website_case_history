@@ -10,10 +10,10 @@
         <template id="header" name="Case History Header">
             <!-- Header of the gallery -->
             <div class="oe_structure">
-                <section class="s_text_block_image_fw mb64 oe_img_bg mt0" style="height: 352px; overflow: hidden; background-image: url(&quot;/website_case_history/static/src/img/INADSE0062.jpg&quot;); background-position: 49.82% 15.29%;">
+                <section class="s_text_block_image_fw mb64 oe_img_bg mt0" style="height: 352px; overflow: hidden; background-image: url(&quot;/website_case_history/static/src/img/Temple_of_Fortuna_-_Palladio_-_Ground.jpg&quot;); background-position: 49.82% 15.29%;">
                     <div class="container">
                         <div class="row">
-                            <div class="mb64 bg-black-50 col-md-8 mt64">
+                            <div class="mb64 bg-black-50 col-lg-8 mt64">
                                 <h1>
                                     <font style="font-size: 48px;" class="text-white">some interesting insight...</font>
                                     <br/>
@@ -63,7 +63,7 @@
         </template>
 
         <template id="gallery_tags" name="Case History Gallery Tags">
-            <div class="col-md-8 col-md-offset-2 text-center" >
+            <div class="col-lg-8 offset-lg-2 text-center" >
                 <t t-set="separator" t-value="0"/>
                 <t t-foreach="tag_ids" t-as="itag">
                     <t t-if="separator==1"> <span class="gallery-separator">|</span> </t>
@@ -100,9 +100,31 @@
                     <t t-else="">
                         <t t-set="ref_list" t-value="reference_lmtd"/>
                     </t>
-                    <div t-foreach="ref_list" t-as="reference">
-                        <t t-set="tag_in_ref" t-value="False"/> 
 
+                    <!--<section class="s_picture bg-200 pt48 pb24">
+                        <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title pt16 pb16">
+                                    <h2 class="s_title_thin" style="text-align: center;">
+                                        <font style="font-size: 62px;" class="o_default_snippet_text">A punchy Headline</font>
+                                    </h2>
+                                </div>
+                                <div class="col-lg-12 pt16 pb16">
+                                    <p style="text-align: center;" class="o_default_snippet_text">Choose a vibrant image and write an inspiring paragraph about it.<br/> It does not have to be long, but it should reinforce your image.</p>
+                                </div>
+                                <div class="col-lg-8 offset-lg-2 pb24">
+                                    <figure class="figure">
+                                        <img src="/web/image/website.s_picture_default_image" class="figure-img img-fluid rounded img-thumbnail padding-large" alt="Odoo • A picture with a caption"/>
+                                        <figcaption class="figure-caption py-3 text-center o_default_snippet_text"><i class="fa fa-1x fa-picture-o mr-2"/>Add a caption to enhance the meaning of this image.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </section>-->
+
+
+                    <section class="s_picture pt0 pb24" t-foreach="ref_list" t-as="reference">
+                        <t t-set="tag_in_ref" t-value="False"/> 
                         <t t-foreach="reference.tags_ids" t-as="ref_tag">
                             <t t-if="tag and tag==ref_tag.name">
                                 <t t-set="tag_in_ref" t-value="True"/>
@@ -114,52 +136,49 @@
                         <t t-if="not tag">
                             <t t-set="tag_in_ref" t-value="True"/> 
                         </t>
-
                         <t t-if="tag_in_ref">
-                            <section class="s_big_picture mb32">
-                                <div class="container">
-                                    <div class="row">
-                                        <hr/>
-                                        <t t-if="reference.orientation=='vertical'">
-                                            <div class="col-md-8 col-md-offset-2 col-sm-12 cropper-v" style="padding: 0px;">
-                                                <div class="col-md-8 mt16">
-                                                    <h3 class="ref-title text-left">
-                                                        <b class="o_default_snippet_text"><span itemprop="name" t-field="reference.name"> </span></b>
-                                                    </h3>
-                                                </div>
-                                                <img class="img img-responsive" t-att-src="website.image_url(reference,'image')" style="margin: 0 auto;" t-att-alt="reference.name"/>
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <hr/>
+                                    <t t-if="reference.orientation=='vertical'">
+                                        <div class="col-lg-8 offset-lg-2 col-sm-12 cropper-v" style="padding: 0px;">
+                                            <div class="ref-title col-lg-8 pt16">
+                                                <h3 class="text-left">
+                                                    <b class="o_default_snippet_text"><span itemprop="name" t-field="reference.name"> </span></b>
+                                                </h3>
                                             </div>
-                                            <t t-if="reference.credits">
-                                                <div class="ref-credit mb16 col-md-8 col-md-offset-2" >
-                                                    <h4 class="text-right">
-                                                        <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
-                                                    </h4>
-                                                </div>
-                                            </t>
+                                            <img class="img img-fluid mx-auto text-center" t-att-src="website.image_url(reference,'image')" style="margin: 0 auto;" t-att-alt="reference.name"/>
+                                        </div>
+                                        <t t-if="reference.credits">
+                                            <div class="ref-credit pb16 col-lg-8 offset-lg-2" >
+                                                <h4 class="text-right">
+                                                    <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
+                                                </h4>
+                                            </div>
                                         </t>
-                                        <t t-elif="reference.orientation=='horizontal'">
-                                            <div class="col-md-8 col-md-offset-2 col-sm-12 cropper-h" style="padding: 0px;">
-                                                <div class="ref-title col-md-8 mt16">
-                                                    <h3 class="text-left">
-                                                        <b class="o_default_snippet_text"><span itemprop="name" t-field="reference.name"> </span></b>
-                                                    </h3>
-                                                </div>
-                                                <img class="img img-responsive" t-att-src="website.image_url(reference,'image')" style="margin: 0 auto;" t-att-alt="reference.name"/>
+                                    </t>
+                                    <t t-elif="reference.orientation=='horizontal'">
+                                        <div class="col-lg-8 offset-lg-2 col-sm-12 cropper-h" style="padding: 0px;">
+                                            <div class="ref-title col-lg-8 pt16">
+                                                <h3 class="text-left">
+                                                    <b class="o_default_snippet_text"><span itemprop="name" t-field="reference.name"> </span></b>
+                                                </h3>
+                                            </div>
+                                            <img class="img img-fluid mx-auto" t-att-src="website.image_url(reference,'image')" style="margin: 0 auto;" t-att-alt="reference.name"/>
 
+                                        </div>
+                                        <t t-if="reference.credits">
+                                            <div class="ref-credit pb16 col-lg-8 offset-lg-2" >
+                                                <h4 class="text-right">
+                                                    <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
+                                                </h4>
                                             </div>
-                                            <t t-if="reference.credits">
-                                                <div class="ref-credit mb16 col-md-8 col-md-offset-2" >
-                                                    <h4 class="text-right">
-                                                        <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
-                                                    </h4>
-                                                </div>
-                                            </t>
                                         </t>
-                                    </div>
+                                    </t>
                                 </div>
-                            </section>
+                            </div>
                         </t>
-                    </div>
+                    </section>
                     <t t-call="website_case_history.gallery_tags"/>
                     <br/><br/>
                 </div>
@@ -170,6 +189,7 @@
             <div class="container">
                 <div id="wrap" class="oe_structure oe_empty">
                     <t t-call="website_case_history.gallery_tags"/>
+                    <hr/>
                     <!-- If the user made a tag selection -->
                     <t t-if="tag">
                         <t t-set="ref_list" t-value="reference_ids"/>
@@ -177,9 +197,8 @@
                     <t t-else="">
                         <t t-set="ref_list" t-value="reference_lmtd"/>
                     </t>
-                    <div t-foreach="ref_list" t-as="reference">
+                    <div class="row" t-foreach="ref_list" t-as="reference">
                         <t t-set="tag_in_ref" t-value="False"/>
-
                         <t t-foreach="reference.tags_ids" t-as="ref_tag">
                             <t t-if="tag and tag==ref_tag.name">
                                 <t t-set="tag_in_ref" t-value="True"/>
@@ -193,13 +212,12 @@
                         </t>
 
                         <t t-if="tag_in_ref">
-                            <section class="s_big_picture mb32">
+                            <section class="s_big_picture pb32">
                                 <div class="container">
-                                    <div class="row">
-                                        <hr/>
+                                    <div>
                                         <t t-if="reference.orientation=='vertical'">
-                                            <div class="col-md-8 col-md-offset-2 col-sm-12 cropper-v" style="padding: 0px;">
-                                                <div class="col-md-8 mt16">
+                                            <div class="col-lg-8 offset-lg-2 col-sm-12 cropper-v" style="padding: 0px;">
+                                                <div class="col-lg-8 mt16">
                                                     <h3 class="ref-title text-left">
                                                         <b class="o_default_snippet_text"><span itemprop="name" t-field="reference.name"> </span></b>
                                                     </h3>
@@ -207,22 +225,22 @@
                                                 <img class="img img-responsive" t-att-src="website.image_url(reference,'image')" style="margin: 0 auto;" t-att-alt="reference.name"/>
                                             </div>
                                             <t t-if="reference.credits">
-                                                <div class="ref-credit mb16 col-md-8 col-md-offset-2" >
+                                                <div class="ref-credit mb16 col-lg-8 offset-lg-2" >
                                                     <h4 class="text-right">
                                                         <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
                                                     </h4>
                                                 </div>
                                             </t>
                                             <t t-if="reference.description">
-                                                <div class="mb16 mt16 col-md-8 col-md-offset-2" >
+                                                <div class="mb16 mt16 col-lg-8 offset-lg-2" >
                                                     <t t-raw="reference.description"/>
                                                 </div>
                                             </t>
 
                                         </t>
                                         <t t-elif="reference.orientation=='horizontal'">
-                                            <div class="col-md-8 col-md-offset-2 col-sm-12 cropper-h" style="padding: 0px;">
-                                                <div class="ref-title col-md-8 mt16">
+                                            <div class="col-lg-8 offset-lg-2 col-sm-12 cropper-h" style="padding: 0px;">
+                                                <div class="ref-title col-lg-8 mt16">
                                                     <h3 class="text-left">
                                                         <b class="o_default_snippet_text"><span itemprop="name" t-field="reference.name"> </span></b>
                                                     </h3>
@@ -231,14 +249,14 @@
 
                                             </div>
                                             <t t-if="reference.credits">
-                                                <div class="ref-credit mb16 col-md-8 col-md-offset-2" >
+                                                <div class="ref-credit mb16 col-lg-8 offset-lg-2" >
                                                     <h4 class="text-right">
                                                         <b class="o_default_snippet_text"><span><t t-raw="reference.credits"/> </span></b>
                                                     </h4>
                                                 </div>
                                             </t>
                                             <t t-if="reference.description">
-                                                <div id="desc" class="mb16 mt16 col-md-8 col-md-offset-2" >
+                                                <div id="desc" class="mb16 mt16 col-lg-8 offset-lg-2" >
                                                     <t t-raw="reference.description"/>
                                                 </div>
                                             </t>

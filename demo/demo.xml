@@ -1,30 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <!--  -->
-        <!--   <record id="object0" model="case_history.case_history"> -->
-        <!--     <field name="name">Object 0</field> -->
-        <!--     <field name="value">0</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object1" model="case_history.case_history"> -->
-        <!--     <field name="name">Object 1</field> -->
-        <!--     <field name="value">10</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object2" model="case_history.case_history"> -->
-        <!--     <field name="name">Object 2</field> -->
-        <!--     <field name="value">20</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object3" model="case_history.case_history"> -->
-        <!--     <field name="name">Object 3</field> -->
-        <!--     <field name="value">30</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object4" model="case_history.case_history"> -->
-        <!--     <field name="name">Object 4</field> -->
-        <!--     <field name="value">40</field> -->
-        <!--   </record> -->
-        <!--  -->
+    <data noupdate="1">
+        <record id="group1" model="case_history.case_group">
+            <field name="name">Pictures</field>
+            <field name="title">Van Gogh Pictures</field>
+            <field name="shortdesc">Some masterworks from the king of impressionist</field>
+            <field name="h_type">gallery</field>
+            <field name="icon_all" type="base64" file="/static/src/img/La_Chambre_à_Arles,_by_Vincent_van_Gogh,_from_C2RMF_resized.jpg"/>
+        </record>
+        
+        <record id="category_impressionist" model="case_history.case_category">
+            <field name="name">Impressionist</field>
+            <field name="icon" type="base64" file=""/>
+            <field name="group_id">group1</field>
+        </record>
+        
+        <record id="vincent_horizontal" model="case_history.case_history">
+            <field name="name">chambre</field>
+            <field name="description">La Chambre à Arles</field>
+            <field name="active" value="true"/>
+            <field name="priority" type="int">100</field>
+            <field name="orientation">horizontal</field>
+            <field name="group_id" ref="group1"/>
+            <field name="tags_ids" ref="category_impressionist"/>
+            <field name="credits">Vincent Van Gogh</field>
+            <field name="image" type="base64" file="/static/src/img/La_Chambre_à_Arles,_by_Vincent_van_Gogh,_from_C2RMF_resized.jpg"/>
+        </record>
     </data>
 </odoo>

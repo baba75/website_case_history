@@ -36,19 +36,19 @@
                         <field name="name"/>
                         <field name="group_id"/>
                         <field name="active"/>
-                        <field name="tags_ids" widget="many2many_tags" string="Reference Categories"/>
+                        <field name="tags_ids" widget="many2many_tags" string="Reference Categories" 
+                               context="{'default_group_id': group_id}"/>
                         <field name="priority"/>
                         <field name="credits"/>
                         <field name="description" widget="html"/>
                         <field name="orientation"/>
-                        <!--
+                        
                          <div>
                           <p class="oe_view_nocontent_create">
                             Images of the gallery could be vertical or horizontal. It is important for proper display that all pictures has the same proportion between width and height.
                           </p>
                           <p>Example: a vertical pics of 655 × 1024 and a pics of 800x1250 have the same proportion </p>
                         </div>
-                        -->
                         <field name="image" widget="image"/>
                     </group>
                 </sheet>
@@ -82,6 +82,7 @@
             <form string="References category">
                 <sheet>
                     <group id="ref_categories">
+                        <field name="group_id"/>
                         <field name="name"/>
                         <field name="icon" widget="image" class="oe_avatar"/>
                     </group>
