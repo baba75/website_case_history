@@ -1,3 +1,9 @@
+.section_title{
+    color: rgb(247, 247, 247); 
+    font-size: 36px;
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 576px) {
     .cropper-v{
         width: 500px;

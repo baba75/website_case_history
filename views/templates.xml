@@ -10,15 +10,26 @@
         <template id="header" name="Case History Header">
             <!-- Header of the gallery -->
             <div class="oe_structure">
-                <section class="s_text_block_image_fw mb64 oe_img_bg mt0" style="height: 352px; overflow: hidden; background-image: url(&quot;/website_case_history/static/src/img/Temple_of_Fortuna_-_Palladio_-_Ground.jpg&quot;); background-position: 49.82% 15.29%;">
+                <section class="pt0 pb8">
                     <div class="container">
-                        <div class="row">
-                            <div class="mb64 bg-black-50 col-lg-8 mt64">
-                                <h1>
-                                    <font style="font-size: 48px;" class="text-white">some interesting insight...</font>
-                                    <br/>
-                                </h1>
-
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+                                <h1 class="s_title_default" style="text-align: right; ">Case history</h1>
+                                <div class="s_hr text-left pt0 pb0">
+                                    <hr class="s_hr_1px s_hr_solid border-600 w-100 mx-auto" style="color:#cccccc;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_cover parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pb0 pt256" data-scroll-background-ratio="1" style="background-image: none;">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url(&quot;/website_case_history/static/src/img/Temple_of_Fortuna_-_Palladio_-_Ground.jpg&quot;); background-position: 49.43% 98.3%;"/>
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="s_text pt16 bg-black-50 pb0 col-lg-8 offset-lg-2" data-name="Text">
+                                <h2 class="section_title text-center">
+                                    some interesting insight...
+                                </h2>
                             </div>
                         </div>
                     </div>
